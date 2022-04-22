@@ -500,7 +500,7 @@ function getPeerGeoLocation() {
         .then((outJson) => {
             peerGeo = outJson;
         })
-        .catch((err) => console.error(err));
+        .catch((err) => console.warn(err));
 }
 
 /**
