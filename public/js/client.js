@@ -24,7 +24,7 @@ const signalingServerPort = 3000; // must be the same to server.js PORT
 const signalingServer = getSignalingServer();
 const roomId = getRoomId();
 const peerInfo = getPeerInfo();
-const peerLoockupUrl = 'https://extreme-ip-lookup.com/json/?key=demo2';
+const peerLoockupUrl = 'https://extreme-ip-lookup.com/json/?key=demo2'; // get your API Key at https://extreme-ip-lookup.com
 const avatarApiUrl = 'https://eu.ui-avatars.com/api';
 const surveyURL = 'https://www.questionpro.com/t/AUs7VZq00L';
 const welcomeImg = '../images/image-placeholder.png';
@@ -492,6 +492,7 @@ function getPeerInfo() {
 
 /**
  * Get approximative peer geolocation
+ * Get your API Key at https://extreme-ip-lookup.com
  * @returns json
  */
 function getPeerGeoLocation() {
@@ -4214,7 +4215,7 @@ function disablePeer(peer_id, element) {
  * Lock Unlock the room from unauthorized access
  */
 function lockUnlockRoom() {
-    lockUnlockRoomBtn.className = roomLocked ? 'fas fa-lock-open' : 'fas fa-lock';
+    getId('lockUnlockRoomIco').className = roomLocked ? 'fas fa-lock-open' : 'fas fa-lock';
 
     if (roomLocked) {
         roomLocked = false;
@@ -5288,7 +5289,7 @@ function showAbout() {
         <div id="about">
             <b><a href="https://github.com/miroslavpejic85/mirotalk" target="_blank">Open Source</a></b> project
             <br/><br/>
-            <button class="far fa-heart pulsate" onclick="window.open('https://github.com/sponsors/miroslavpejic85?o=esb')"> Sponsor</button>
+            <button class="pulsate" onclick="window.open('https://github.com/sponsors/miroslavpejic85?o=esb')"><i class="fas fa-heart" ></i> Sponsor</button>
             <br /><br />
             Author:<a href="https://www.linkedin.com/in/miroslav-pejic-976a07101/" target="_blank"> Miroslav Pejic</a>
         </div>

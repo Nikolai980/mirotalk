@@ -13,13 +13,13 @@ Free `WebRTC` browser-based video calls, chat, and screen sharing, using google 
 
 Open the app with the following **supported browsers** and many more.
 
-[![browsers](public/images/browsers.png)](https://mirotalk.herokuapp.com/)
+[![browsers](public/images/browsers.png)](https://mirotalk.up.railway.app/)
 
-## https://mirotalk.herokuapp.com/
+## https://mirotalk.up.railway.app/
 
 <br>
 
-[![mirotalk](public/images/mirotalk-header.gif)](https://mirotalk.herokuapp.com/)
+[![mirotalk](public/images/mirotalk-header.gif)](https://mirotalk.up.railway.app/)
 
 ## Features
 
@@ -40,7 +40,7 @@ Open the app with the following **supported browsers** and many more.
 -   Chat with Emoji Picker & Private messages & Save the conversations
 -   Speech recognition to send the speeches
 -   Advance collaborative whiteboard for the teachers
--   Share any YouTube video in real-time
+-   Share any YT Embed video in real-time
 -   Full-Screen Mode on mouse click on the Video element
 -   Possibility to Change UI Themes
 -   Right-click on the Video elements for more options
@@ -71,6 +71,18 @@ https://www.canva.com/design/DAE693uLOIU/view
     | audio  | boolean | enable / disable |
     | video  | boolean | enable / disable |
     | notify | boolean | enable / disable |
+
+## Embed a meeting
+
+Embedding a meeting into a service or app using an iframe.
+
+```html
+<iframe
+    allow="camera; microphone; fullscreen; display-capture; autoplay"
+    src="https://mirotalk.up.railway.app/newcall"
+    style="height: 100%; width: 100%; border: 0px;"
+></iframe>
+```
 
 ## Quick start
 
@@ -140,19 +152,21 @@ If you want `MiroTalk` to be `reachable` from the `outside` of your local networ
 
 ## Live demo
 
+<a target="_blank" href="https://railway.app/new/template/mirotalk?referralCode=mirotalk"><img src="https://railway.app/button.svg" style="width: 220px;"></a>
+
+https://mirotalk.up.railway.app/
+
+[![railway-qr](public/images/mirotalk-railway-qr.png)](https://mirotalk.up.railway.app/)
+
+<br>
+
 <a target="_blank" href="https://www.heroku.com/"><img src="https://www.herokucdn.com/deploy/button.svg" style="width: 220px;"></a>
 
 https://mirotalk.herokuapp.com/
 
 [![heroku-qr](public/images/mirotalk-heroku-qr.png)](https://mirotalk.herokuapp.com/)
 
-<br>
-
-<a target="_blank" href="https://railway.app"><img src="https://railway.app/button.svg" style="width: 220px;"></a>
-
-https://mirotalk.up.railway.app/
-
-[![railway-qr](public/images/mirotalk-railway-qr.png)](https://mirotalk.up.railway.app/)
+If you want to deploy a MiroTalk P2P instance on your dedicated server, or for other needs, don't hesitate to contact us at p2p.mirotalk@gmail.com.
 
 ---
 
@@ -179,17 +193,7 @@ https://mirotalk.up.railway.app/
 
 MiroTalk is free and can be modified and forked. But the conditions of the AGPLv3 (GNU Affero General Public License v3.0) need to be respected. In particular modifications need to be free as well and made available to the public. Get a quick overview of the license at [Choose an open source license](https://choosealicense.com/licenses/agpl-3.0/).
 
----
-
-<br/>
-
-## Commercial License or closed source
-
-For commercial use or closed source projects, we can offer licensing under the following terms.
-
-> World-wide, non-exclusive, non-transferable and non-sub-licensable license of MiroTalk as is on https://github.com/miroslavpejic85/mirotalk for use in purchasers products, as long as the resulting software does not stand in concurrence to the MiroTalk itself. Any liability is excluded. The law of the Federal Republic of Italy shall apply exclusively.
-
-The one time fee is 499 EUR net. Please contact miroslav.pejic.85@gmail.com.
+For a MiroTalk license under conditions other than AGPLv3, please contact us at info.mirotalk@gmail.com.
 
 ---
 
